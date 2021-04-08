@@ -40,13 +40,18 @@ const AddProducts = () => {
   };
   return (
     <div>
-      <h1 style={{ color: "Black" }}>Add your Event Here</h1>
+      <h1 style={{ color: "Black" }}>Add your Product Here</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h3 style={{ color: "Black" }}>Product Name</h3>
-        <input name='name' defaultValue='new-event' ref={register} />
+        <input
+          style={{ color: "gray" }}
+          name='name'
+          defaultValue='product name'
+          ref={register}
+        />
         <br />
         <h3 style={{ color: "Black" }}>Add Price</h3>
-        <input name='price' ref={register} />
+        <input style={{ color: "gray" }} name='price' ref={register} />
         <br />
         <input
           name='exampleRequired'

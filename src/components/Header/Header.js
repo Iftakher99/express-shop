@@ -5,17 +5,18 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className='header'>
-      <a href='#' className='shop-name'>
+      <Link className='shop-name' to='/home'>
         {" "}
         Express Shop
-      </a>
+      </Link>
+
       <nav className='nav'>
         <ul>
           <li>
             <Link to='/home'>Home</Link>
           </li>
           <li>
-            <Link to='/addProducts'>Add Product</Link>
+            <Link to='/order'>Order</Link>
           </li>
           <li>
             <Link to='/admin'>Admin</Link>
