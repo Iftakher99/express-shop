@@ -54,6 +54,7 @@ const CheckOut = () => {
             </thead>
             <tbody>
               <tr>
+                <td>{}</td>
                 <td>{order.orderDate}</td>
                 <td>{order.price}</td>
                 <td>{order.email}</td>
