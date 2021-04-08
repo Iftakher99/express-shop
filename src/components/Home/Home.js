@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Products from "../Products/Products";
-
+import "./Home.css";
 const Home = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -10,24 +10,14 @@ const Home = () => {
         setProducts(result);
       });
   }, []);
-  // const togglerSpinner = (show) =>{
-  //     const spinner = document.getElementById('loading-spinner');
-  //    if(show){
-  //     spinner.classList.remove('d-none');
-  //    }
-  //    else{
-  //     spinner.classList.add('d-none');
-  //    }
-  //   }
 
   return (
     <div className='row'>
-      {/* <div class="d-flex justify-content-center ">
-                <div id="loading-spinner" class="spinner-border text-success  d-none" role="status">
-                    <span class="visually-hidden"></span>
-                </div>
-                togglerSpinner(false)
-            </div> */}
+      {products.length === 0 && (
+        <div class='spinner' style={{ fontSize: "18px" }}>
+          <div class='head'></div>
+        </div>
+      )}
       {products.map((product) => (
         <Products key={product._id} products={product}></Products>
       ))}

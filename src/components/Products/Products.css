@@ -1,17 +1,21 @@
-.card-div{
-    margin-left: 20px;
+.card-div {
+  margin-left: 20px;
 }
-.card{
-     margin-bottom: 30px;
-    width: 18rem;
-     color: black;
-     background-color: #794c4f;
+.card {
+  background-color: #9dbeb9;
+  margin-bottom: 30px;
+  width: 18rem;
+  color: #ff2418;
+
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px 5px #d6c7c7;
 }
-.card-text{
-    font-size: 30px;
-     color: #0d10c7;
+.card-text {
+  font-size: 30px;
+  color: #194350;
 }
-.card-img{
-    height: 250px;
-    width:285px;
+.card-img {
+  height: 250px;
+  width: 285px;
+  padding: 30px;
 }

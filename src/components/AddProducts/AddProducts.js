@@ -12,7 +12,7 @@ const AddProducts = () => {
       imageUrl: imageUrl,
       price: data.price,
     };
-    const url = `https://protected-lowlands-44213.herokuapp.com/products`;
+    const url = `https://protected-lowlands-44213.herokuapp.com/addProducts`;
 
     fetch(url, {
       method: "POST",
