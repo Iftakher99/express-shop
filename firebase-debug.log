@@ -1,0 +1,58 @@
+[debug] [2021-04-08T10:48:18.538Z] ----------------------------------------------------------------------
+[debug] [2021-04-08T10:48:18.539Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting:github
+[debug] [2021-04-08T10:48:18.540Z] CLI Version:   9.6.1
+[debug] [2021-04-08T10:48:18.540Z] Platform:      linux
+[debug] [2021-04-08T10:48:18.540Z] Node Version:  v14.16.0
+[debug] [2021-04-08T10:48:18.540Z] Time:          Thu Apr 08 2021 16:48:18 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-08T10:48:18.540Z] ----------------------------------------------------------------------
+[debug] [2021-04-08T10:48:18.540Z] 
+[debug] [2021-04-08T10:48:18.543Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-08T10:48:18.544Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/iftakher-mahmud/Web Development/Projects/express-shop
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using express-fruits. 
+[debug] [2021-04-08T10:48:18.550Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/express-fruits [none]
+[debug] [2021-04-08T10:48:19.006Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/express-fruits 200
+[debug] [2021-04-08T10:48:19.007Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/express-fruits {"projectId":"express-fruits","projectNumber":"453125732406","displayName":"express-fruits","name":"projects/express-fruits","resources":{"hostingSite":"express-fruits"},"state":"ACTIVE"}
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /home/iftakher-mahmud/Web Development/Projects/express-shop 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1008536500&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-04-08T10:48:33.754Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"ad77129aa85cd3ec99dc","redirect_uri":"http://localhost:9005","state":"1008536500"}
+[debug] [2021-04-08T10:48:34.850Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Thu, 08 Apr 2021 10:48:34 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"2f590027290624e1e0e6a3e1ef5e2f52\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"8914:93EA:1577A97:1678504:606EDF82"}
+[debug] [2021-04-08T10:48:34.877Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-04-08T10:48:35.872Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-04-08T10:48:35.872Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Iftakher99","id":73179862,"node_id":"MDQ6VXNlcjczMTc5ODYy","avatar_url":"https://avatars.githubusercontent.com/u/73179862?v=4","gravatar_id":"","url":"https://api.github.com/users/Iftakher99","html_url":"https://github.com/Iftakher99","followers_url":"https://api.github.com/users/Iftakher99/followers","following_url":"https://api.github.com/users/Iftakher99/following{/other_user}","gists_url":"https://api.github.com/users/Iftakher99/gists{/gist_id}","starred_url":"https://api.github.com/users/Iftakher99/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Iftakher99/subscriptions","organizations_url":"https://api.github.com/users/Iftakher99/orgs","repos_url":"https://api.github.com/users/Iftakher99/repos","events_url":"https://api.github.com/users/Iftakher99/events{/privacy}","received_events_url":"https://api.github.com/users/Iftakher99/received_events","type":"User","site_admin":false,"name":"Iftakher Mahmud","company":null,"blog":"https://iftakher99.github.io/Bootstrap-5-p1/","location":"Dhaka,Bangladesh","email":"19tonmoy99@gmail.com","hireable":true,"bio":null,"twitter_username":null,"public_repos":25,"public_gists":0,"followers":5,"following":50,"created_at":"2020-10-20T13:50:19Z","updated_at":"2021-04-08T09:47:04Z","private_gists":1,"total_private_repos":4,"owned_private_repos":4,"disk_usage":83198,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Iftakher99 
+[info] 
+[debug] [2021-04-08T10:48:51.990Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-04-08T10:48:53.046Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-04-08T10:48:53.046Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
