@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const AddProducts = () => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit } = useForm();
   const [imageUrl, setImageUrl] = useState(null);
 
   const onSubmit = (data) => {
@@ -12,7 +12,7 @@ const AddProducts = () => {
       imageUrl: imageUrl,
       price: data.price,
     };
-    const url = `http://localhost:5000/addProducts`;
+    const url = `https://protected-lowlands-44213.herokuapp.com/products`;
 
     fetch(url, {
       method: "POST",
