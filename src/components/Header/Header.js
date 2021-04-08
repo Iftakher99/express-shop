@@ -7,7 +7,7 @@ const Header = () => {
     <div className='header'>
       <a href='#' className='shop-name'>
         {" "}
-        Express Fruits
+        Express Shop
       </a>
       <nav className='nav'>
         <ul>

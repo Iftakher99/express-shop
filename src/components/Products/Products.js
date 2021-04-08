@@ -1,7 +1,12 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-
+import { useHistory } from "react-router";
+import "./Products.css";
 const Products = ({ products }) => {
+  const history = useHistory();
+  const handleBuy = (productType) => {
+    history.push(`/checkOut/${productType}`);
+  };
   const deleteProduct = (id) => {};
   return (
     // <div className='col-md-3'>
@@ -28,7 +33,7 @@ const Products = ({ products }) => {
               ${products.price} &nbsp; &nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <Button
-                onClick={() => deleteProduct(products._id)}
+                onClick={() => handleBuy(products.productType)}
                 variant='success'
               >
                 Buy Now
